@@ -1,0 +1,28 @@
+{
+  "name": "Time Series Segmentation & Changepoint Detection",
+  "stack": "container",
+  "description": "An R/Shiny app for time-series segmentation and changepoint detection tasks.",
+  "keywords": [
+    "r",
+    "shiny"
+  ],
+  "env": {
+    "MEMORY_MONITOR_APP_NAME": {
+      "description": "Type here the same application name",
+      "required": true
+    },
+    "MEMORY_MONITOR_HEROKU_API_KEY": {
+      "description": "Type here the Heroku API key",
+      "required": true
+    }
+  },
+  "repository": "https://github.com/medoidai/ts-changepoint-detection-app",
+  "logo": "https://www.medoid.ai/wp-content/uploads/2020/05/medoid-ai-logo-1.png",
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<style>
+  #cookie_consent {
+    background-color : rgb(20, 20, 20, 0.8);
+    min-height : 26px;
+    font-size : 14px;
+    color : #ccc;
+    line-height : 26px;
+    padding : 8px 0 8px 10px;
+    font-family : "Trebuchet MS", Helvetica, sans-serif;
+    position : fixed;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    display : none;
+    z-index : 9999;
+  }
+
+  #cookie_consent a {
+    color : #4B8EE7;
+    text-decoration : none;
+  }
+
+  #cookie_consent a.cookie_consent_ok {
+    background-color : #F1D600;
+    color : #000;
+    display : inline-block;
+    border-radius : 5px;
+    padding : 0 20px;
+    cursor : pointer;
+    margin : 0 10px 0 10px;
+  }
+
+  #cookie_consent a.cookie_consent_ok:hover {
+    background-color : #E0C91F;
+  }
+</style>
+
+<div id="cookie_consent">We do not collect any data from this app and we use Heroku services which feature ephemeral (non-permanent) storage. This app does not use any cookies. <a class="cookie_consent_ok">I Understand</a></div>
+
+<script>
+  $(document).ready(function(){
+    $("#cookie_consent").fadeIn(200);
+
+    $(".cookie_consent_ok").click(function() {
+      $("#cookie_consent").fadeOut(200);
+    });
+  });
+</script>
